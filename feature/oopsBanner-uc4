@@ -1,0 +1,58 @@
+/**
+ * OOPSBannerApp - UC4 Implementation
+ * Prints large ASCII banner "OOPS"
+ * using Array and Enhanced For-Loop
+ *
+ * @author Abhinav
+ * @version 4.0
+ */
+
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        // Store banner rows in String array
+        String[] banner = {
+
+                String.join("  ",
+                        " OOO ",
+                        " OOO ",
+                        "PPPP ",
+                        "SSSS "
+                ),
+
+                String.join("  ",
+                        "O   O",
+                        "O   O",
+                        "P   P",
+                        "S    "
+                ),
+
+                String.join("  ",
+                        "O   O",
+                        "O   O",
+                        "PPPP ",
+                        "SSSS "
+                ),
+
+                String.join("  ",
+                        "O   O",
+                        "O   O",
+                        "P    ",
+                        "    S"
+                ),
+
+                String.join("  ",
+                        " OOO ",
+                        " OOO ",
+                        "P    ",
+                        "SSSS "
+                )
+        };
+
+        // Print using enhanced for-loop
+        for (String row : banner) {
+            System.out.println(row);
+        }
+    }
+}
