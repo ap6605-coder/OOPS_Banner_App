@@ -1,0 +1,71 @@
+/**
+ * OOPSBannerApp - UC5 Implementation
+ * Array Declaration + Initialization using String.join()
+ *
+ * Prints large ASCII banner "OOPS"
+ *
+ * @author Abhinav
+ * @version 5.0
+ */
+
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        String[] banner = {
+
+                String.join("   ",
+                        "  OOO  ",
+                        "  OOO  ",
+                        " PPPP  ",
+                        " SSSS  "
+                ),
+
+                String.join("   ",
+                        " O   O ",
+                        " O   O ",
+                        " P   P ",
+                        " S      "
+                ),
+
+                String.join("   ",
+                        " O   O ",
+                        " O   O ",
+                        " PPPP  ",
+                        "  SSS   "
+                ),
+
+                String.join("   ",
+                        " O   O ",
+                        " O   O ",
+                        " P      ",
+                        "     S  "
+                ),
+
+                String.join("   ",
+                        " O   O ",
+                        " O   O ",
+                        " P      ",
+                        "     S  "
+                ),
+
+                String.join("   ",
+                        "  OOO  ",
+                        "  OOO  ",
+                        " P      ",
+                        " SSSS  "
+                ),
+
+                String.join("   ",
+                        "       ",
+                        "       ",
+                        "       ",
+                        "       "
+                )
+        };
+
+        for (String line : banner) {
+            System.out.println(line);
+        }
+    }
+}
